@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Astercore Technologies — Building a Better Future</title>
+<meta name="description" content="Astercore Technologies. Building the technologies of tomorrow. Coming soon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="loader">
+    <div class="aster-mark spin"><span></span><span></span><span></span><span></span></div>
+    <div class="loader-bar"></div>
+    <div class="loader-text">Initializing Astercore</div>
+    <div class="loader-percent" id="loaderPercent">0%</div>
+  </div>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <canvas id="network"></canvas>
+  <div class="grid-overlay"></div>
+  <div class="vignette"></div>
+
+  <!-- HERO -->
+  <section class="hero" id="section-hero">
+    <div class="hero-content" id="heroContent">
+      <div class="eyebrow">ASTERCORE TECHNOLOGIES</div>
+      <h1 class="brand-name">ASTERCORE<br>TECHNOLOGIES</h1>
+      <div class="subtitle-wrap">
+        <p class="subtitle" id="typedSubtitle">Building the technologies of tomorrow.</p>
+      </div>
+
+      <div class="badge"><span class="dot"></span> COMING SOON</div>
+
+      <div class="countdown" id="countdown">
+        <div class="count-unit"><div class="count-value" id="cd-years">00</div><div class="count-label">Years</div></div>
+        <div class="count-sep">:</div>
+        <div class="count-unit"><div class="count-value" id="cd-days">00</div><div class="count-label">Days</div></div>
+        <div class="count-sep">:</div>
+        <div class="count-unit"><div class="count-value" id="cd-hours">00</div><div class="count-label">Hours</div></div>
+        <div class="count-sep">:</div>
+        <div class="count-unit"><div class="count-value" id="cd-mins">00</div><div class="count-label">Minutes</div></div>
+        <div class="count-sep">:</div>
+        <div class="count-unit"><div class="count-value" id="cd-secs">00</div><div class="count-label">Seconds</div></div>
+      </div>
+
+      <p class="hero-foot">Something extraordinary is being built.</p>
+      <p class="typing-line"><span id="typingMessage"></span><span class="typing-cursor"></span></p>
+
+      <p class="future-arrived" id="futureArrived">The Future Has Arrived</p>
+    </div>
+
+    <div class="scroll-cue"><div class="line"></div><span>Scroll</span></div>
+  </section>
+
+  <!-- FUTURE VISION -->
+  <section id="section-vision">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Direction</span>
+        <h2 class="section-title">The Future Starts Here</h2>
+      </div>
+      <div class="cards">
+        <div class="card reveal-3d">
+          <span class="card-index">01</span>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"></path></svg>
+          </div>
+          <h3>Artificial Intelligence</h3>
+          <p>Building intelligent systems that enhance human potential.</p>
+        </div>
+        <div class="card reveal-3d">
+          <span class="card-index">02</span>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="1"></rect><rect x="3" y="13" width="18" height="7" rx="1"></rect><path d="M7 7.5h.01M7 16.5h.01"></path></svg>
+          </div>
+          <h3>Digital Infrastructure</h3>
+          <p>Creating next-generation platforms and ecosystems.</p>
+        </div>
+        <div class="card reveal-3d">
+          <span class="card-index">03</span>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z"></path></svg>
+          </div>
+          <h3>Emerging Technologies</h3>
+          <p>Pioneering innovations that redefine industries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION STATEMENT -->
+  <section id="section-statement">
+    <div class="section-inner">
+      <div class="vision-statement reveal" id="visionStatement">
+        <p id="visionText"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE -->
+  <section id="section-showcase">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Preview</span>
+        <h2 class="section-title">Confidential Systems in Development</h2>
+      </div>
+      <div class="showcase-grid">
+        <div class="panel reveal-3d">
+          <div class="panel-top"><span class="panel-tag"><span class="dot"></span>Under Development</span><span class="panel-id">SYS / 0A1</span></div>
+          <h4>AI Systems</h4>
+          <div class="panel-bars"><span style="height:40%"></span><span style="height:70%;animation-delay:.2s"></span><span style="height:55%;animation-delay:.4s"></span><span style="height:85%;animation-delay:.1s"></span><span style="height:30%;animation-delay:.3s"></span><span style="height:60%;animation-delay:.5s"></span></div>
+          <div class="panel-status" data-panel="ai"><span class="stat-dot"></span><span class="status-text">Initializing…</span></div>
+          <div class="panel-progress"><div class="panel-progress-fill" data-fill="ai"></div></div>
+          <div class="panel-redact"></div>
+          <div class="panel-redact short"></div>
+        </div>
+        <div class="panel reveal-3d">
+          <div class="panel-top"><span class="panel-tag"><span class="dot"></span>Under Development</span><span class="panel-id">SYS / 0B2</span></div>
+          <h4>Future Operating Platforms</h4>
+          <div class="panel-bars"><span style="height:60%"></span><span style="height:35%;animation-delay:.15s"></span><span style="height:80%;animation-delay:.3s"></span><span style="height:50%;animation-delay:.45s"></span><span style="height:65%;animation-delay:.2s"></span><span style="height:40%;animation-delay:.35s"></span></div>
+          <div class="panel-status" data-panel="platforms"><span class="stat-dot"></span><span class="status-text">Initializing…</span></div>
+          <div class="panel-progress"><div class="panel-progress-fill" data-fill="platforms"></div></div>
+          <div class="panel-redact"></div>
+          <div class="panel-redact short"></div>
+        </div>
+        <div class="panel reveal-3d">
+          <div class="panel-top"><span class="panel-tag"><span class="dot"></span>Under Development</span><span class="panel-id">SYS / 0C3</span></div>
+          <h4>Advanced Computing</h4>
+          <div class="panel-bars"><span style="height:75%"></span><span style="height:45%;animation-delay:.1s"></span><span style="height:30%;animation-delay:.25s"></span><span style="height:65%;animation-delay:.4s"></span><span style="height:55%;animation-delay:.15s"></span><span style="height:80%;animation-delay:.3s"></span></div>
+          <div class="panel-status" data-panel="computing"><span class="stat-dot"></span><span class="status-text">Initializing…</span></div>
+          <div class="panel-progress"><div class="panel-progress-fill" data-fill="computing"></div></div>
+          <div class="panel-redact"></div>
+          <div class="panel-redact short"></div>
+        </div>
+        <div class="panel reveal-3d">
+          <div class="panel-top"><span class="panel-tag"><span class="dot"></span>Under Development</span><span class="panel-id">SYS / 0D4</span></div>
+          <h4>Digital Ecosystems</h4>
+          <div class="panel-bars"><span style="height:50%"></span><span style="height:65%;animation-delay:.2s"></span><span style="height:35%;animation-delay:.35s"></span><span style="height:75%;animation-delay:.05s"></span><span style="height:45%;animation-delay:.25s"></span><span style="height:60%;animation-delay:.4s"></span></div>
+          <div class="panel-status" data-panel="ecosystems"><span class="stat-dot"></span><span class="status-text">Initializing…</span></div>
+          <div class="panel-progress"><div class="panel-progress-fill" data-fill="ecosystems"></div></div>
+          <div class="panel-redact"></div>
+          <div class="panel-redact short"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-mark"><div class="aster-mark spin"><span></span><span></span><span></span><span></span></div></div>
+    <div class="footer-name">ASTERCORE TECHNOLOGIES</div>
+    <div class="footer-tagline">Building a Better Future</div>
+    <div class="footer-copy">© 2026 ASTERCORE TECHNOLOGIES. ALL RIGHTS RESERVED.</div>
+  </footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
