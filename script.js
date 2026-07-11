@@ -85,7 +85,7 @@ function initLoader() {
    countdown reaches zero, the timer is replaced with the arrival message.
    ========================================================================== */
 function initCountdown() {
-  const LAUNCH_DATE = new Date('2031-01-01T00:00:00Z').getTime();
+  const LAUNCH_DATE = new Date('2035-01-01T00:00:00Z').getTime();
 
   const els = {
     years:  $('#cd-years'),
