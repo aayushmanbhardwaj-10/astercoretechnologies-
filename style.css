@@ -239,7 +239,7 @@
   @keyframes cursorBlink{ 0%,100%{ opacity:1;} 50%{ opacity:0;} }
 
   .scroll-cue{
-    position:absolute; bottom:34px; left:50%; transform:translateX(-50%);
+    position:absolute; bottom:34px; left:0; right:0; margin:auto; width:max-content;
     display:flex; flex-direction:column; align-items:center; gap:10px;
     opacity:0; animation: fadeUp 1s var(--ease) 2.2s forwards;
   }
